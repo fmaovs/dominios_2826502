@@ -1,4 +1,4 @@
-package org.cgmlti.dominios.java.PruebaEjercicio3;
+package org.cgmlti.dominios.java.Ejercicio3;
 
 public class Camion extends Vehiculo{
     Integer potencia;
