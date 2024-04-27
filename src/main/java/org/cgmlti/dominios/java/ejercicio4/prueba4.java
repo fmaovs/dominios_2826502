@@ -21,7 +21,9 @@ public class prueba4 {
         ruta1.listaCiudades.add(ciudad3);
 
         for(Ciudad recorrerPais : ruta1.listaCiudades ){
-            System.out.println("Ciudad: " + recorrerPais.nombre);
+            int indice = ruta1.listaCiudades.indexOf(recorrerPais) + 1;
+            //System.out.println(indice);
+            System.out.println("Ciudad " + indice + ": " + recorrerPais.nombre);
         }
 
 
