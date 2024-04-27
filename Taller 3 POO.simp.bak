@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sim-project version="14.30" multi-file="no" uid="simp1458755c846c456d9a63fbc58baa4d05" creation-date="04/25/2024 19:53:27">
+<sim-project version="13.96" multi-file="no" uid="simp1458755c846c456d9a63fbc58baa4d05">
   <meta>
     <name>Taller 3 POO</name>
-    <authors>Mauricio Villanueva</authors>
+    <authors> </authors>
     <description />
   </meta>
   <counters models="1">
@@ -36,7 +36,12 @@
         <value>1</value>
       </counter>
     </diagrams>
-    <fields />
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>3</value>
+      </counter>
+    </fields>
   </counters>
   <alias-groups />
   <management uid="md-b811259b4b3e4da396bd1bbdff4c3867" name="" task-id-sequence="0">
@@ -60,6 +65,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-334555c505694c109cc0e7cf16786cb7" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -69,7 +75,7 @@
     <tasks />
     <to-dos />
   </management>
-  <glossary id="glsr-1c66e4bf53744c17b7b7db4cca589eab" name="" order-index="0" />
+  <glossary id="glsr-1c66e4bf53744c17b7b7db4cca589eab" />
   <types default="UML">
     <type-sets>
       <type-set file="UmlTypes.xml" />
@@ -78,13 +84,75 @@
       <parameters />
       <types>
         <type id="Class:8ec525a240dd4297a316af81eed21abc" name="Camion" class-ref="8ec525a240dd4297a316af81eed21abc" />
+        <type id="Class:f726785a61f248839d67b28ffb0c83da" name="Camioneta" class-ref="f726785a61f248839d67b28ffb0c83da" />
         <type id="Class:4925eae90263413bb8f325d6e3eb7be1" name="CamionRemolque" class-ref="4925eae90263413bb8f325d6e3eb7be1" />
         <type id="Class:23276e6c10984e05b442e1c02235755a" name="Viaje" class-ref="23276e6c10984e05b442e1c02235755a" />
-        <type id="Class:f726785a61f248839d67b28ffb0c83da" name="Camioneta" class-ref="f726785a61f248839d67b28ffb0c83da" />
       </types>
     </custom-types>
   </types>
   <items>
+    <item id="cf128f8695b04a30b8bcfe11dcc4857d" cid="PROP026" type="property" owner="5f41cf2abf2143259896cb5cd5c571d1" creator="" creation-date="04/25/2024 17:27:48" visibility="private">
+      <structural-feature type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
+    </item>
+    <item id="dcc09a966e684b33b57a93f751f44f0c" cid="PROP004" type="property" name="viajesPorSemana" owner="f726785a61f248839d67b28ffb0c83da" creator="" creation-date="04/25/2024 16:34:29" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Integer" type-id="Uml.Integer" />
+    </item>
+    <item id="5b722b46e30448d297051fbb55cd5561" cid="PROP024" type="property" name="es hecho por" owner="b03a98c9fada43a293f9455ad2220139" creator="" creation-date="04/25/2024 17:26:50" visibility="private">
+      <structural-feature multiplicity="1" type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
+    </item>
+    <item id="dc9dcbff8c4948a38c42bbb7317a87f8" cid="PROP023" type="property" name="puede hacer" owner="b03a98c9fada43a293f9455ad2220139" creator="" creation-date="04/25/2024 17:26:50" visibility="private">
+      <structural-feature multiplicity="1" type="Camion" type-id="Class:8ec525a240dd4297a316af81eed21abc" />
+    </item>
+    <item id="324d0d104c2047d782c134e0abd6f585" cid="PROP005" type="property" name="esDobleCabina" owner="f726785a61f248839d67b28ffb0c83da" creator="" creation-date="04/25/2024 16:34:43" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Boolean" type-id="Uml.Boolean" />
+    </item>
+    <item id="160cf9910d154a55963f5f1afbeeca95" cid="PROP028" type="property" name="es hecho por" owner="ad97e3fd9d414c07a9396a8b82fc99fe" creator="" creation-date="04/25/2024 19:54:11" visibility="private">
+      <structural-feature multiplicity="1" type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
+    </item>
     <item id="26b3ace24e0540568fae918231b6a719" cid="PROP025" type="property" owner="5f41cf2abf2143259896cb5cd5c571d1" creator="" creation-date="04/25/2024 17:27:48" visibility="private">
       <structural-feature type="Camioneta" type-id="Class:f726785a61f248839d67b28ffb0c83da" />
     </item>
@@ -116,7 +184,7 @@
       </style>
       <structural-feature type="Integer" type-id="Uml.Integer" />
     </item>
-    <item id="dcc09a966e684b33b57a93f751f44f0c" cid="PROP004" type="property" name="viajesPorSemana" owner="f726785a61f248839d67b28ffb0c83da" creator="" creation-date="04/25/2024 16:34:29" visibility="private">
+    <item id="3fea4f9048f04b5a88aa852ed1ee82c4" cid="PROP006" type="property" name="potencia" owner="8ec525a240dd4297a316af81eed21abc" creator="" creation-date="04/25/2024 16:36:11" visibility="private">
       <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
         <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
@@ -166,68 +234,6 @@
       </style>
       <structural-feature type="String" type-id="Uml.String" />
     </item>
-    <item id="160cf9910d154a55963f5f1afbeeca95" cid="PROP028" type="property" name="es hecho por" owner="ad97e3fd9d414c07a9396a8b82fc99fe" creator="" creation-date="04/25/2024 19:54:11" visibility="private">
-      <structural-feature multiplicity="1" type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
-    </item>
-    <item id="3fea4f9048f04b5a88aa852ed1ee82c4" cid="PROP006" type="property" name="potencia" owner="8ec525a240dd4297a316af81eed21abc" creator="" creation-date="04/25/2024 16:36:11" visibility="private">
-      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
-        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
-        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
-        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
-        <background type="solid" colors="#F2F2F2,#F2F2F2" />
-        <border color="#555555" width="2" />
-        <label-connector color="#80000000" dash-style="Dash" />
-        <alternate-styles>
-          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
-            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
-            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
-            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
-            <background type="solid" colors="#203D85,#203D85" />
-            <border color="#203D85" width="2" />
-            <label-connector color="#80000000" dash-style="Dash" />
-          </alternate-style>
-        </alternate-styles>
-      </style>
-      <structural-feature type="Integer" type-id="Uml.Integer" />
-    </item>
-    <item id="dc9dcbff8c4948a38c42bbb7317a87f8" cid="PROP023" type="property" name="puede hacer" owner="b03a98c9fada43a293f9455ad2220139" creator="" creation-date="04/25/2024 17:26:50" visibility="private">
-      <structural-feature multiplicity="1" type="Camion" type-id="Class:8ec525a240dd4297a316af81eed21abc" />
-    </item>
-    <item id="cf128f8695b04a30b8bcfe11dcc4857d" cid="PROP026" type="property" owner="5f41cf2abf2143259896cb5cd5c571d1" creator="" creation-date="04/25/2024 17:27:48" visibility="private">
-      <structural-feature type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
-    </item>
-    <item id="324d0d104c2047d782c134e0abd6f585" cid="PROP005" type="property" name="esDobleCabina" owner="f726785a61f248839d67b28ffb0c83da" creator="" creation-date="04/25/2024 16:34:43" visibility="private">
-      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
-        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
-        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
-        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
-        <background type="solid" colors="#F2F2F2,#F2F2F2" />
-        <border color="#555555" width="2" />
-        <label-connector color="#80000000" dash-style="Dash" />
-        <alternate-styles>
-          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
-            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
-            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
-            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
-            <background type="solid" colors="#203D85,#203D85" />
-            <border color="#203D85" width="2" />
-            <label-connector color="#80000000" dash-style="Dash" />
-          </alternate-style>
-        </alternate-styles>
-      </style>
-      <structural-feature type="Boolean" type-id="Uml.Boolean" />
-    </item>
-    <item id="5b722b46e30448d297051fbb55cd5561" cid="PROP024" type="property" name="es hecho por" owner="b03a98c9fada43a293f9455ad2220139" creator="" creation-date="04/25/2024 17:26:50" visibility="private">
-      <structural-feature multiplicity="1" type="Viaje" type-id="Class:23276e6c10984e05b442e1c02235755a" />
-    </item>
   </items>
   <models>
     <model id="p84c4eebea9d44e6e9bddd774195abe6b_575649732" name="Model1" namespace="" order-index="1">
@@ -243,7 +249,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pe8be98b055cb41c9ac4200159a4cc499_814547525" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+      <diagram type="uml-class" id="pe8be98b055cb41c9ac4200159a4cc499_814547525" name="ClassDiagram1" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="147,180">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -260,26 +266,6 @@
           <version />
         </meta>
         <abstract-items>
-          <item id="8ec525a240dd4297a316af81eed21abc" cid="C003" type="class" name="Camion" creator="" creation-date="04/25/2024 16:34:51" visibility="undefined">
-            <owned-items />
-            <attributes>
-              <attribute id="ac04b4337753843c7af97cd9f39fbd796471" cid="PROP006" name="potencia" creation-date="04/25/2024 16:36:11" property-ref="3fea4f9048f04b5a88aa852ed1ee82c4" />
-            </attributes>
-            <source-codes>
-              <source-code language="ActionScript" />
-            </source-codes>
-          </item>
-          <item id="5f41cf2abf2143259896cb5cd5c571d1" cid="REL002" type="relationship" creator="" creation-date="04/25/2024 17:27:48" from="f726785a61f248839d67b28ffb0c83da" to="23276e6c10984e05b442e1c02235755a" visibility="package">
-            <owned-items />
-            <relation from="f726785a61f248839d67b28ffb0c83da" to="23276e6c10984e05b442e1c02235755a" derived="false">
-              <start-role id="umlar-c8bd3c53-7aa3-4120-b5f7-1c5d73bdcfb2" name="" navigability="" association-type="association" visibility="private" property-ref="26b3ace24e0540568fae918231b6a719" />
-              <end-role id="umlar-eb9db35f-9e0f-4436-9208-5683e4b12a4c" name="" navigability="" association-type="association" visibility="private" property-ref="cf128f8695b04a30b8bcfe11dcc4857d" />
-            </relation>
-          </item>
-          <item id="d1b2550b991d4955bbbdbaf242261d4c" cid="GNR007" type="generalization" creator="" creation-date="04/25/2024 16:50:33" from="4925eae90263413bb8f325d6e3eb7be1" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
-          <item id="8d1fa66e10894fe4b13efc97d84ad975" cid="PROP003" type="property" name="capacidadCarga" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:32:04" visibility="private">
-            <structural-feature type="Integer" type-id="Uml.Integer" />
-          </item>
           <item id="2db68f38f0034895a2c5b3813535e981" cid="C001" type="class" name="Vehiculo" creator="" creation-date="04/25/2024 16:29:33" visibility="undefined">
             <owned-items />
             <attributes>
@@ -287,13 +273,38 @@
               <attribute id="aad1e51c30c5c4d4c9a8a273914c2452963" cid="PROP002" name="estado" creation-date="04/25/2024 16:31:45" property-ref="7f5d31b1d7fc415b848deaa6947b7a16" />
               <attribute id="abf4a7bb8c998455c9c76cb0dfeca6ae8998" cid="PROP003" name="capacidadCarga" creation-date="04/25/2024 16:32:04" property-ref="8d1fa66e10894fe4b13efc97d84ad975" />
             </attributes>
+            <operations>
+              <operation id="of04a400924ed4ada89d0db3751e9dce2212" cid="OP001" name="Vehiculo" creation-date="04/26/2024 15:29:04" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="oe5edb0e914744bec917c0d5ad3b66087901" cid="OP002" name="Vehiculo" creation-date="04/26/2024 15:30:41" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pcd1ca3e4d41e4cdfbd9181095720e5f0" name="codigo" type="Integer" type-id="Uml.Integer">
+                    <tagged-values>
+                      <tagged-value id="tv1b66a82e52e64e878b4e85051b816c1a" name="set_codigo" type="reference" multiple="false" hidden="false" ref="a64c3433c6bf4b11944ad65f8b36f205" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="p549f823fb58240bfb25385cae19965d1" name="estado" type="Boolean" type-id="Uml.Boolean">
+                    <tagged-values>
+                      <tagged-value id="tv42b08637a9b940af97950fe56a83b819" name="set_estado" type="reference" multiple="false" hidden="false" ref="7f5d31b1d7fc415b848deaa6947b7a16" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="p8bb2f34e45944ee6a0737628fbb61c5c" name="capacidadCarga" type="Integer" type-id="Uml.Integer">
+                    <tagged-values>
+                      <tagged-value id="tv0870c8e925ee4d65a58a7aa0c21a6ce6" name="set_capacidadCarga" type="reference" multiple="false" hidden="false" ref="8d1fa66e10894fe4b13efc97d84ad975" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
-          </item>
-          <item id="cadeb4ad65784fdf81667590c6e03e60" cid="GNR005" type="generalization" creator="" creation-date="04/25/2024 16:47:49" from="f726785a61f248839d67b28ffb0c83da" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
-          <item id="a64c3433c6bf4b11944ad65f8b36f205" cid="PROP001" type="property" name="codigo" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:31:28" visibility="private">
-            <structural-feature type="Integer" type-id="Uml.Integer" />
           </item>
           <item id="23276e6c10984e05b442e1c02235755a" cid="C005" type="class" name="Viaje" creator="" creation-date="04/25/2024 17:23:06" visibility="undefined">
             <owned-items />
@@ -305,23 +316,8 @@
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="d11d0d863f8a424693aee5f79c99d831" cid="GNR003" type="generalization" creator="" creation-date="04/25/2024 16:47:17" from="8ec525a240dd4297a316af81eed21abc" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
-          <item id="ad97e3fd9d414c07a9396a8b82fc99fe" cid="REL003" type="relationship" creator="" creation-date="04/25/2024 19:54:11" from="4925eae90263413bb8f325d6e3eb7be1" to="23276e6c10984e05b442e1c02235755a" visibility="package">
-            <owned-items />
-            <relation from="4925eae90263413bb8f325d6e3eb7be1" to="23276e6c10984e05b442e1c02235755a" derived="false">
-              <start-role id="umlar-3ee1e7e6-c4ec-49e6-bf4f-9f8cb918bfb9" name="" navigability="" association-type="association" visibility="private" property-ref="3578b67c6c144733be44e1b62d7a439d" />
-              <end-role id="umlar-ea99156a-3b1a-4fc1-a5ee-c04f3f8ad7af" name="" navigability="" association-type="association" visibility="private" property-ref="160cf9910d154a55963f5f1afbeeca95" />
-            </relation>
-          </item>
-          <item id="03a69bc1e63040fd80743c115a5a3ce4" cid="PROP021" type="property" name="fechaFin" owner="23276e6c10984e05b442e1c02235755a" creator="" creation-date="04/25/2024 17:23:41" visibility="private">
-            <structural-feature type="DateTime" type-id="Uml.DateTime" />
-          </item>
-          <item id="b03a98c9fada43a293f9455ad2220139" cid="REL001" type="relationship" creator="" creation-date="04/25/2024 17:26:50" from="8ec525a240dd4297a316af81eed21abc" to="23276e6c10984e05b442e1c02235755a" visibility="package">
-            <owned-items />
-            <relation from="8ec525a240dd4297a316af81eed21abc" to="23276e6c10984e05b442e1c02235755a" derived="false">
-              <start-role id="umlar-4f6c5f11-33ec-4aca-850b-9d1f260a233a" name="" navigability="" association-type="association" visibility="private" property-ref="dc9dcbff8c4948a38c42bbb7317a87f8" />
-              <end-role id="umlar-57f6e902-051d-4904-b322-af8aef23bb32" name="" navigability="" association-type="association" visibility="private" property-ref="5b722b46e30448d297051fbb55cd5561" />
-            </relation>
+          <item id="7f5d31b1d7fc415b848deaa6947b7a16" cid="PROP002" type="property" name="estado" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:31:45" visibility="private">
+            <structural-feature type="Boolean" type-id="Uml.Boolean" />
           </item>
           <item id="4925eae90263413bb8f325d6e3eb7be1" cid="C004" type="class" name="CamionRemolque" creator="" creation-date="04/25/2024 16:43:10" visibility="undefined">
             <owned-items />
@@ -333,8 +329,31 @@
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="7f5d31b1d7fc415b848deaa6947b7a16" cid="PROP002" type="property" name="estado" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:31:45" visibility="private">
-            <structural-feature type="Boolean" type-id="Uml.Boolean" />
+          <item id="ad97e3fd9d414c07a9396a8b82fc99fe" cid="REL003" type="relationship" creator="" creation-date="04/25/2024 19:54:11" from="4925eae90263413bb8f325d6e3eb7be1" to="23276e6c10984e05b442e1c02235755a" visibility="package">
+            <owned-items />
+            <relation from="4925eae90263413bb8f325d6e3eb7be1" to="23276e6c10984e05b442e1c02235755a" derived="false">
+              <start-role id="umlar-eab3de16-0185-4f52-bd8e-25a06a0a2b1f" name="" navigability="" association-type="association" visibility="private" property-ref="3578b67c6c144733be44e1b62d7a439d" />
+              <end-role id="umlar-f5670ff6-ceef-4bbf-bd51-f04c720beb1b" name="" navigability="" association-type="association" visibility="private" property-ref="160cf9910d154a55963f5f1afbeeca95" />
+            </relation>
+          </item>
+          <item id="03a69bc1e63040fd80743c115a5a3ce4" cid="PROP021" type="property" name="fechaFin" owner="23276e6c10984e05b442e1c02235755a" creator="" creation-date="04/25/2024 17:23:41" visibility="private">
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="8d1fa66e10894fe4b13efc97d84ad975" cid="PROP003" type="property" name="capacidadCarga" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:32:04" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="cadeb4ad65784fdf81667590c6e03e60" cid="GNR005" type="generalization" creator="" creation-date="04/25/2024 16:47:49" from="f726785a61f248839d67b28ffb0c83da" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
+          <item id="008360692ffb4d4d8b69b3aa326dbfec" cid="PROP020" type="property" name="fechaInicio" owner="23276e6c10984e05b442e1c02235755a" creator="" creation-date="04/25/2024 17:23:22" visibility="private">
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="8ec525a240dd4297a316af81eed21abc" cid="C003" type="class" name="Camion" creator="" creation-date="04/25/2024 16:34:51" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="ac04b4337753843c7af97cd9f39fbd796471" cid="PROP006" name="potencia" creation-date="04/25/2024 16:36:11" property-ref="3fea4f9048f04b5a88aa852ed1ee82c4" />
+            </attributes>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
           </item>
           <item id="f726785a61f248839d67b28ffb0c83da" cid="C002" type="class" name="Camioneta" creator="" creation-date="04/25/2024 16:32:17" visibility="undefined">
             <owned-items />
@@ -346,18 +365,34 @@
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="008360692ffb4d4d8b69b3aa326dbfec" cid="PROP020" type="property" name="fechaInicio" owner="23276e6c10984e05b442e1c02235755a" creator="" creation-date="04/25/2024 17:23:22" visibility="private">
-            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          <item id="a64c3433c6bf4b11944ad65f8b36f205" cid="PROP001" type="property" name="codigo" owner="2db68f38f0034895a2c5b3813535e981" creator="" creation-date="04/25/2024 16:31:28" visibility="private">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
           </item>
+          <item id="5f41cf2abf2143259896cb5cd5c571d1" cid="REL002" type="relationship" creator="" creation-date="04/25/2024 17:27:48" from="f726785a61f248839d67b28ffb0c83da" to="23276e6c10984e05b442e1c02235755a" visibility="package">
+            <owned-items />
+            <relation from="f726785a61f248839d67b28ffb0c83da" to="23276e6c10984e05b442e1c02235755a" derived="false">
+              <start-role id="umlar-be6e3535-a866-4a7a-9273-a8d9f41af06c" name="" navigability="" association-type="association" visibility="private" property-ref="26b3ace24e0540568fae918231b6a719" />
+              <end-role id="umlar-d6d32791-d2a3-4c9b-a193-058058f76dc1" name="" navigability="" association-type="association" visibility="private" property-ref="cf128f8695b04a30b8bcfe11dcc4857d" />
+            </relation>
+          </item>
+          <item id="b03a98c9fada43a293f9455ad2220139" cid="REL001" type="relationship" creator="" creation-date="04/25/2024 17:26:50" from="8ec525a240dd4297a316af81eed21abc" to="23276e6c10984e05b442e1c02235755a" visibility="package">
+            <owned-items />
+            <relation from="8ec525a240dd4297a316af81eed21abc" to="23276e6c10984e05b442e1c02235755a" derived="false">
+              <start-role id="umlar-6952b2a7-e8f1-4e8a-9c1a-5cb23a6259e0" name="" navigability="" association-type="association" visibility="private" property-ref="dc9dcbff8c4948a38c42bbb7317a87f8" />
+              <end-role id="umlar-5fbe567f-4211-463f-a9bc-04445ea28bd1" name="" navigability="" association-type="association" visibility="private" property-ref="5b722b46e30448d297051fbb55cd5561" />
+            </relation>
+          </item>
+          <item id="d11d0d863f8a424693aee5f79c99d831" cid="GNR003" type="generalization" creator="" creation-date="04/25/2024 16:47:17" from="8ec525a240dd4297a316af81eed21abc" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
+          <item id="d1b2550b991d4955bbbdbaf242261d4c" cid="GNR007" type="generalization" creator="" creation-date="04/25/2024 16:50:33" from="4925eae90263413bb8f325d6e3eb7be1" to="2db68f38f0034895a2c5b3813535e981" visibility="package" />
         </abstract-items>
         <layer id="d22d1310142245bcbb2efaa5676bda75" name="Default" visible="true" enabled="true" locked="false">
           <item id="2db68f38f0034895a2c5b3813535e981" iid="c860d1b1433141d0bf8fe194b8bef979" show-fields="true" creation-date="04/25/2024 16:29:33" order-index="0" type="entity">
-            <layout ax="568" ay="333" awidth="140" aheight="160" x="568" y="333" width="140" height="160" />
+            <layout ax="470" ay="333" awidth="339" aheight="160" x="470" y="333" width="140" height="160" />
             <classifier />
             <class />
           </item>
           <item id="f726785a61f248839d67b28ffb0c83da" iid="4b870fa68eb94759910156b4ab900fe6" show-fields="true" creation-date="04/25/2024 16:32:17" order-index="1" type="entity">
-            <layout ax="852" ay="439" awidth="175" aheight="160" x="852" y="439" width="175" height="160" rotation-center="-0.17428571,-0.021875" />
+            <layout ax="852" ay="439" awidth="175" aheight="160" x="852" y="439" width="175" height="160" rotation-center="-0.1742857,-0.021875" />
             <classifier />
             <class />
           </item>
@@ -367,35 +402,35 @@
             <class />
           </item>
           <item id="4925eae90263413bb8f325d6e3eb7be1" iid="a7fe13c1aec54be4a6860bc236995f03" show-fields="true" creation-date="04/25/2024 16:43:10" order-index="3" type="entity">
-            <layout ax="243" ay="333" awidth="192" aheight="160" x="243" y="333" width="140" height="160" />
+            <layout ax="193" ay="333" awidth="192" aheight="160" x="193" y="333" width="140" height="160" />
             <classifier />
             <class />
           </item>
           <item id="d11d0d863f8a424693aee5f79c99d831" iid="1c247a5173ba4b12b4954b3b9cd2b88a" creation-date="04/25/2024 16:47:17" order-index="5" type="relation">
-            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="852" y1="271" x2="638" y2="333" start-border-pos="0.8738446235656738" end-border-pos="0.125" name-position="0,20">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="852" y1="271" x2="639" y2="333" start-border-pos="0.873844623565674" end-border-pos="0.12452589727081" name-position="0,20">
               <points>
                 <point x="852" y="271" />
                 <point x="638" y="273" />
-                <point x="638" y="333" />
+                <point x="639" y="333" />
               </points>
             </layout>
             <relation from="8ec525a240dd4297a316af81eed21abc" from-iid="dff045410c4b41a7951b866de171b020" to="2db68f38f0034895a2c5b3813535e981" to-iid="c860d1b1433141d0bf8fe194b8bef979" />
           </item>
           <item id="cadeb4ad65784fdf81667590c6e03e60" iid="61243dcb4391482483a500ca4ce6fff8" creation-date="04/25/2024 16:47:49" order-index="6" type="relation">
-            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="852" y1="519" x2="644" y2="493" start-border-pos="0.875" end-border-pos="0.6142183576311384" name-position="0,20">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="852" y1="519" x2="645" y2="493" start-border-pos="0.875" end-border-pos="0.621291799179572" name-position="0,20">
               <points>
                 <point x="852" y="519" />
                 <point x="646" y="519" />
-                <point x="644" y="493" />
+                <point x="645" y="493" />
               </points>
             </layout>
             <relation from="f726785a61f248839d67b28ffb0c83da" from-iid="4b870fa68eb94759910156b4ab900fe6" to="2db68f38f0034895a2c5b3813535e981" to-iid="c860d1b1433141d0bf8fe194b8bef979" />
           </item>
           <item id="d1b2550b991d4955bbbdbaf242261d4c" iid="d69364dc012f42eb9b08318f50323adb" creation-date="04/25/2024 16:50:33" order-index="7" type="relation">
-            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="435" y1="413" x2="568" y2="413" start-border-pos="0.375" end-border-pos="0.875" name-position="0,20">
+            <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="385" y1="413" x2="470" y2="413" start-border-pos="0.375" end-border-pos="0.875" name-position="0,20">
               <points>
-                <point x="435" y="413" />
-                <point x="568" y="413" />
+                <point x="385" y="413" />
+                <point x="470" y="413" />
               </points>
             </layout>
             <relation from="4925eae90263413bb8f325d6e3eb7be1" from-iid="a7fe13c1aec54be4a6860bc236995f03" to="2db68f38f0034895a2c5b3813535e981" to-iid="c860d1b1433141d0bf8fe194b8bef979" />
@@ -406,7 +441,7 @@
             <class />
           </item>
           <item id="b03a98c9fada43a293f9455ad2220139" iid="af65f4732d954402b19619020476e535" creation-date="04/25/2024 17:26:50" order-index="9" type="relation">
-            <layout start-role-position="49,-20" end-role-position="19.58792,-40.91751" start-multiplicity-position="28,22" end-multiplicity-position="21.3021,34.06105" line-style="oblique" lock-to-fields="false" auto-path="" x1="992" y1="270" x2="1277" y2="333" start-border-pos="0.375" end-border-pos="0.12799704415457588" name-position="0,20">
+            <layout start-role-position="49,-20" end-role-position="19.58792,-40.91751" start-multiplicity-position="28,22" end-multiplicity-position="21.3021,34.06105" line-style="oblique" lock-to-fields="false" auto-path="" x1="992" y1="270" x2="1277" y2="333" start-border-pos="0.375" end-border-pos="0.127997044154576" name-position="0,20">
               <points>
                 <point x="992" y="270" />
                 <point x="1278" y="270" />
@@ -426,9 +461,9 @@
             <relation from="f726785a61f248839d67b28ffb0c83da" from-iid="4b870fa68eb94759910156b4ab900fe6" to="23276e6c10984e05b442e1c02235755a" to-iid="7236d904946b4d0ba22648a7683cb108" />
           </item>
           <item id="ad97e3fd9d414c07a9396a8b82fc99fe" iid="9c24b520d3204e1fb594f91aed4f386a" creation-date="04/25/2024 19:54:11" order-index="11" type="relation">
-            <layout start-role-position="41.05112,-20.49575" end-role-position="27.185692,-44.95302" start-multiplicity-position="33.67485,23" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="243" y1="373" x2="1317" y2="493" start-border-pos="0.9375" end-border-pos="0.20000000298023224" start-local-pos="38" end-local-pos="112" name-position="0,20">
+            <layout start-role-position="41.05112,-20.49575" end-role-position="27.18569,-44.95302" start-multiplicity-position="33.67485,23" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="193" y1="373" x2="1317" y2="493" start-border-pos="0.9375" end-border-pos="0.200000002980232" start-local-pos="38" end-local-pos="112" name-position="0,20">
               <points>
-                <point x="243" y="373" />
+                <point x="193" y="373" />
                 <point x="152" y="373" />
                 <point x="154" y="676" />
                 <point x="1316" y="685" />

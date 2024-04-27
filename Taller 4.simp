@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.96" multi-file="no" uid="simpe3a14edcd105440b8a20345d682d9ed6">
+  <meta>
+    <name>Taller 4</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>19</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>7</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>7</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-4e98a443a11d4fda8886974bcdf1fd0a" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-18dade9d343e4558a03dbcdde1aedbf4" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Class:a7def6fbe6b94d3fa7323bd42ca9b6ef" name="País" class-ref="a7def6fbe6b94d3fa7323bd42ca9b6ef" />
+        <type id="Ruta[*]" name="Ruta[*]" />
+        <type id="Ciudad[*]" name="Ciudad[*]" />
+        <type id="Class:ea9d0a57d73049c29806844deaabe2b0" name="Ciudad" class-ref="ea9d0a57d73049c29806844deaabe2b0" />
+        <type id="Class:4274f8ad112f46efb29220676260b76c" name="Ruta" class-ref="4274f8ad112f46efb29220676260b76c" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="8e35d6327241411593eef78a0f52b896" cid="PROP001" type="property" name="nombre" owner="a7def6fbe6b94d3fa7323bd42ca9b6ef" creator="" creation-date="04/26/2024 15:45:27" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="String" type-id="Uml.String" />
+    </item>
+    <item id="0b2611654cbe4b5e877d83961db914ab" cid="PROP002" type="property" name="nombre" owner="ea9d0a57d73049c29806844deaabe2b0" creator="" creation-date="04/26/2024 15:45:44" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="String" type-id="Uml.String" />
+    </item>
+    <item id="e3a8c7fecd8f4a3aa8c5e00219803cf4" cid="PROP013" type="property" owner="51e0d56a555943f4a4e968be7ed8ac8b" creator="" creation-date="04/26/2024 15:59:23" visibility="private">
+      <structural-feature multiplicity="*" type="Ciudad" type-id="Class:ea9d0a57d73049c29806844deaabe2b0" />
+    </item>
+    <item id="0dd33e70aed24f35a06b1b0a71fb318d" cid="PROP012" type="property" owner="51e0d56a555943f4a4e968be7ed8ac8b" creator="" creation-date="04/26/2024 15:59:23" visibility="private">
+      <structural-feature type="País" type-id="Class:a7def6fbe6b94d3fa7323bd42ca9b6ef" />
+      <property aggregation="shared" />
+    </item>
+    <item id="26a44b2637224bf7b0fa92d8ce86a9d2" cid="PROP017" type="property" owner="37e5ffb9ec0641e68704f678aa61a775" creator="" creation-date="04/26/2024 16:01:52" visibility="private">
+      <structural-feature multiplicity="*" type="Ciudad" type-id="Class:ea9d0a57d73049c29806844deaabe2b0" />
+    </item>
+    <item id="04b1fa12eb3e4bfab6459938ad48a72a" cid="PROP016" type="property" owner="37e5ffb9ec0641e68704f678aa61a775" creator="" creation-date="04/26/2024 16:01:52" visibility="private">
+      <structural-feature type="Ruta" type-id="Class:4274f8ad112f46efb29220676260b76c" />
+      <property aggregation="shared" />
+    </item>
+    <item id="dff5b941d1be4fbba45ea134b905d066" cid="PROP003" type="property" name="numero" owner="4274f8ad112f46efb29220676260b76c" creator="" creation-date="04/26/2024 15:46:50" visibility="private">
+      <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+        <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+        <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+        <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+        <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+        <background type="solid" colors="#F2F2F2,#F2F2F2" />
+        <border color="#555555" width="2" />
+        <label-connector color="#80000000" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+            <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+            <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+            <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+            <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+            <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+            <background type="solid" colors="#203D85,#203D85" />
+            <border color="#203D85" width="2" />
+            <label-connector color="#80000000" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <structural-feature type="Integer" type-id="Uml.Integer" />
+    </item>
+  </items>
+  <models>
+    <model id="p3861b8c7347f4f20b8e3b8ed01030439_414365724" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/26/2024 15:41:17</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p6d7a35c90ba84139866d4afc183b5288_401199659" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/26/2024 15:41:17</creation-date>
+          <change-date>04/26/2024 16:01:54</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="a7def6fbe6b94d3fa7323bd42ca9b6ef" cid="C001" type="class" name="País" creator="" creation-date="04/26/2024 15:41:44" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a3ad34927f48d4532abc00464c244ab97724" cid="PROP001" name="nombre" creation-date="04/26/2024 15:45:27" property-ref="8e35d6327241411593eef78a0f52b896" />
+              <attribute id="a0d47b2780d924a6b8d8ba8c2bfc6cc6d711" cid="PROP004" name="listaCiudades" creation-date="04/26/2024 15:52:40" property-ref="11913d4bca07429e903918797a674773" />
+            </attributes>
+            <operations>
+              <operation id="o5d851964285c41e8b086ab795cc137b2781" cid="OP001" name="País" creation-date="04/26/2024 16:03:52" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="od3ce57ef129f4f93894e0ad7420986e5891" cid="OP002" name="País" creation-date="04/26/2024 16:03:59" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p7033ca9f9fd04d78b757ea67d2c2164b" name="nombre" type="String" type-id="Uml.String">
+                    <tagged-values>
+                      <tagged-value id="tv8761fd45f68f4388b75dde85f378e41f" name="set_nombre" type="reference" multiple="false" hidden="false" ref="8e35d6327241411593eef78a0f52b896" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="p72d1af71724f47d8b45e75391b00cdbb" name="listaCiudades" type="Ciudad[*]" type-id="Ciudad[*]">
+                    <tagged-values>
+                      <tagged-value id="tvbfa1b35d29734daeb1e28f2d0f88ed9b" name="set_listaCiudades" type="reference" multiple="false" hidden="false" ref="11913d4bca07429e903918797a674773" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="ea9d0a57d73049c29806844deaabe2b0" cid="C002" type="class" name="Ciudad" creator="" creation-date="04/26/2024 15:42:03" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a6c4c35b1029946bdb8cc79490b6e8d9e782" cid="PROP002" name="nombre" creation-date="04/26/2024 15:45:44" property-ref="0b2611654cbe4b5e877d83961db914ab" />
+            </attributes>
+            <operations>
+              <operation id="o817f895e0ba24bf984479ea48edace6e61" cid="OP003" name="Ciudad" creation-date="04/26/2024 16:04:13" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o2affc653d0424504891691e1354d5d84879" cid="OP004" name="Ciudad" creation-date="04/26/2024 16:04:16" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p1ac66fef5fad488db7c140ba22feb366" name="nombre" type="String" type-id="Uml.String">
+                    <tagged-values>
+                      <tagged-value id="tv58d63e777f0640149c4f551ce9d95e67" name="set_nombre" type="reference" multiple="false" hidden="false" ref="0b2611654cbe4b5e877d83961db914ab" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="51e0d56a555943f4a4e968be7ed8ac8b" cid="REL004" type="relationship" creator="" creation-date="04/26/2024 15:59:23" from="a7def6fbe6b94d3fa7323bd42ca9b6ef" to="ea9d0a57d73049c29806844deaabe2b0" visibility="package">
+            <owned-items />
+            <relation from="a7def6fbe6b94d3fa7323bd42ca9b6ef" to="ea9d0a57d73049c29806844deaabe2b0" derived="false">
+              <start-role id="umlar-d90da574-b0cd-44b6-b8c8-aa29401643fa" name="" navigability="" association-type="aggregation" visibility="private" property-ref="0dd33e70aed24f35a06b1b0a71fb318d" />
+              <end-role id="umlar-57dfb5b5-11d7-4e4e-9b00-ada1dac352bb" name="" navigability="" association-type="association" visibility="private" property-ref="e3a8c7fecd8f4a3aa8c5e00219803cf4" />
+            </relation>
+          </item>
+          <item id="37e5ffb9ec0641e68704f678aa61a775" cid="REL006" type="relationship" creator="" creation-date="04/26/2024 16:01:52" from="4274f8ad112f46efb29220676260b76c" to="ea9d0a57d73049c29806844deaabe2b0" visibility="package">
+            <owned-items />
+            <relation from="4274f8ad112f46efb29220676260b76c" to="ea9d0a57d73049c29806844deaabe2b0" derived="false">
+              <start-role id="umlar-a71c5026-f6f9-4569-a5dc-d3dae4b2edad" name="" navigability="" association-type="aggregation" visibility="private" property-ref="04b1fa12eb3e4bfab6459938ad48a72a" />
+              <end-role id="umlar-70f92de1-0cad-424a-a58e-ccc35b1d0bb7" name="" navigability="" association-type="association" visibility="private" property-ref="26a44b2637224bf7b0fa92d8ce86a9d2" />
+            </relation>
+          </item>
+          <item id="56b6752b26d34056965455ab79759c75" cid="PROP018" type="property" name="listaCiudades" owner="4274f8ad112f46efb29220676260b76c" creator="" creation-date="04/26/2024 16:02:19" visibility="private">
+            <structural-feature type="Ciudad[*]" type-id="Ciudad[*]" />
+          </item>
+          <item id="4274f8ad112f46efb29220676260b76c" cid="C003" type="class" name="Ruta" creator="" creation-date="04/26/2024 15:42:10" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="abc871486e1a54561b7ed79db229f5c7d766" cid="PROP003" name="numero" creation-date="04/26/2024 15:46:50" property-ref="dff5b941d1be4fbba45ea134b905d066" />
+              <attribute id="a0a3ae468701f4d58a371e08d66366deb374" cid="PROP018" name="listaCiudades" creation-date="04/26/2024 16:02:19" property-ref="56b6752b26d34056965455ab79759c75" />
+            </attributes>
+            <operations>
+              <operation id="o48fd8d202145401abd5becb638415d0a673" cid="OP005" name="Ruta" creation-date="04/26/2024 16:04:21" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="oe86d89ae02de42e7844f898f4437b5f2319" cid="OP006" name="Ruta" creation-date="04/26/2024 16:04:27" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pdd2387f7ecb0423db7729fd07a136fc5" name="numero" type="Integer" type-id="Uml.Integer">
+                    <tagged-values>
+                      <tagged-value id="tv3e63bde6866e4ea1acc548bf78253a6c" name="set_numero" type="reference" multiple="false" hidden="false" ref="dff5b941d1be4fbba45ea134b905d066" />
+                    </tagged-values>
+                  </parameter>
+                  <parameter id="p24173e33226e49ec9eaba1216c0f0a69" name="listaCiudades" type="Ciudad[*]" type-id="Ciudad[*]">
+                    <tagged-values>
+                      <tagged-value id="tv394d3e0fb8cf4483b55c434dae5ee475" name="set_listaCiudades" type="reference" multiple="false" hidden="false" ref="56b6752b26d34056965455ab79759c75" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="11913d4bca07429e903918797a674773" cid="PROP004" type="property" name="listaCiudades" owner="a7def6fbe6b94d3fa7323bd42ca9b6ef" creator="" creation-date="04/26/2024 15:52:40" visibility="private">
+            <structural-feature type="Ciudad[*]" type-id="Ciudad[*]" />
+          </item>
+        </abstract-items>
+        <layer id="dddb8d02932a413fb9d411498cfdb613" name="Default" visible="true" enabled="true" locked="false">
+          <item id="a7def6fbe6b94d3fa7323bd42ca9b6ef" iid="eacd82721a754f10bbb95f2df847821a" show-fields="true" creation-date="04/26/2024 15:41:44" order-index="0" type="entity">
+            <layout ax="207" ay="187" awidth="353" aheight="160" x="207" y="187" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="ea9d0a57d73049c29806844deaabe2b0" iid="fa8ad5ae8109465f91354e114de19ba4" show-fields="true" creation-date="04/26/2024 15:42:03" order-index="1" type="entity">
+            <layout ax="691" ay="187" awidth="140" aheight="160" x="691" y="187" width="140" height="160" />
+            <classifier />
+            <class />
+          </item>
+          <item id="4274f8ad112f46efb29220676260b76c" iid="8119f0c722ad4d50b97c85955c599022" show-fields="true" creation-date="04/26/2024 15:42:10" order-index="2" type="entity">
+            <layout ax="943" ay="187" awidth="383" aheight="160" x="943" y="187" width="383" height="160" rotation-center="-13.5,0" />
+            <classifier />
+            <class />
+          </item>
+          <item id="51e0d56a555943f4a4e968be7ed8ac8b" iid="114ce874b753430bb49ed5c7fc473539" creation-date="04/26/2024 15:59:23" order-index="3" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="560" y1="267" x2="691" y2="267" start-border-pos="0.375" end-border-pos="0.875" name-position="0,20">
+              <points>
+                <point x="560" y="267" />
+                <point x="691" y="267" />
+              </points>
+            </layout>
+            <relation from="a7def6fbe6b94d3fa7323bd42ca9b6ef" from-iid="eacd82721a754f10bbb95f2df847821a" to="ea9d0a57d73049c29806844deaabe2b0" to-iid="fa8ad5ae8109465f91354e114de19ba4" />
+          </item>
+          <item id="37e5ffb9ec0641e68704f678aa61a775" iid="6c9a0687e9cb4c58b5c0beab00dbdfa5" creation-date="04/26/2024 16:01:52" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="943" y1="267" x2="831" y2="267" start-border-pos="0.875" end-border-pos="0.375" name-position="0,20">
+              <points>
+                <point x="943" y="267" />
+                <point x="831" y="267" />
+              </points>
+            </layout>
+            <relation from="4274f8ad112f46efb29220676260b76c" from-iid="8119f0c722ad4d50b97c85955c599022" to="ea9d0a57d73049c29806844deaabe2b0" to-iid="fa8ad5ae8109465f91354e114de19ba4" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
